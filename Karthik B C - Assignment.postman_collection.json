@@ -1,0 +1,360 @@
+{
+	"info": {
+		"_postman_id": "24ae5130-ab6b-4d49-8dbe-ae0310d0734a",
+		"name": "Karthik B C - Assignment",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "6133766"
+	},
+	"item": [
+		{
+			"name": "cypress-activity-dashboard",
+			"item": [
+				{
+					"name": "User Registration",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Test User\",\n    \"email\": \"test123@email.com\",\n    \"password\": \"123456\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/user-register",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"user-register"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "User Registration",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\": \"Test User\",\n    \"email\": \"test123@email.com\",\n    \"password\": \"123456\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/user-register",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"user-register"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 17 Jul 2023 11:18:00 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 17 Jul 2023 11:18:00 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.1.11"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "59"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": 201,\n    \"message\": \"User registered successfully.\",\n    \"data\": [],\n    \"error\": []\n}"
+						}
+					]
+				},
+				{
+					"name": "User Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\": \"test123@email.com\",\n    \"password\": \"123456\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/user-login",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"user-login"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "User Login",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"email\": \"test123@email.com\",\n    \"password\": \"123456\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/user-login",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"user-login"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 17 Jul 2023 11:18:35 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 17 Jul 2023 11:18:35 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.1.11"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "58"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": 200,\n    \"message\": \"Success.\",\n    \"data\": {\n        \"access_token\": \"5|oHfOeTeLheTVNPsxJqXo7OAgxZ0kSCD6xzA2ggUn\",\n        \"token_type\": \"Bearer\"\n    },\n    \"error\": []\n}"
+						}
+					]
+				},
+				{
+					"name": "Logged in users activity by date",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "13|5SXFHwjK0L5TeCtITX9M9pjHovzZb5oxrbQoe1BP",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/logged-users-activity?start_date=15/07/2023&end_date=30/11/2023",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"logged-users-activity"
+							],
+							"query": [
+								{
+									"key": "start_date",
+									"value": "15/07/2023"
+								},
+								{
+									"key": "end_date",
+									"value": "30/11/2023"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Logged in users activity by date",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/logged-users-activity?start_date=15/07/2023&end_date=30/11/2023",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"logged-users-activity"
+									],
+									"query": [
+										{
+											"key": "start_date",
+											"value": "15/07/2023"
+										},
+										{
+											"key": "end_date",
+											"value": "30/11/2023"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 17 Jul 2023 14:18:53 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 17 Jul 2023 14:18:53 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.1.11"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "59"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": 200,\n    \"message\": \"Success.\",\n    \"data\": [\n        {\n            \"user_name\": \"Test User\",\n            \"email\": \"test123@email.com\",\n            \"activity_title\": \"Test activity 1\",\n            \"activity_description\": \"This is a Test activity 1\",\n            \"activity_date\": \"2023-07-17\",\n            \"is_global_activity\": 1,\n            \"activity_is_edited\": 0,\n            \"activity_created_at\": \"2023-07-17 14:16:04\",\n            \"activity_updated_at\": \"2023-07-17 14:17:31\"\n        },\n        {\n            \"user_name\": \"Test User\",\n            \"email\": \"test123@email.com\",\n            \"activity_title\": \"Test activity 2\",\n            \"activity_description\": \"This is a Test activity 2\",\n            \"activity_date\": \"2023-07-18\",\n            \"is_global_activity\": 1,\n            \"activity_is_edited\": 0,\n            \"activity_created_at\": \"2023-07-17 14:16:32\",\n            \"activity_updated_at\": \"2023-07-17 14:16:32\"\n        },\n        {\n            \"user_name\": \"Test User\",\n            \"email\": \"test123@email.com\",\n            \"activity_title\": \"Test activity 3\",\n            \"activity_description\": \"This is a Test activity 3\",\n            \"activity_date\": \"2023-07-18\",\n            \"is_global_activity\": 1,\n            \"activity_is_edited\": 0,\n            \"activity_created_at\": \"2023-07-17 14:16:48\",\n            \"activity_updated_at\": \"2023-07-17 14:16:48\"\n        },\n        {\n            \"user_name\": \"Test User\",\n            \"email\": \"test123@email.com\",\n            \"activity_title\": \"Test activity 4\",\n            \"activity_description\": \"This is a Test activity 4\",\n            \"activity_date\": \"2023-07-19\",\n            \"is_global_activity\": 1,\n            \"activity_is_edited\": 0,\n            \"activity_created_at\": \"2023-07-17 14:17:02\",\n            \"activity_updated_at\": \"2023-07-17 14:17:02\"\n        }\n    ],\n    \"error\": []\n}"
+						}
+					]
+				}
+			]
+		}
+	]
+}
